@@ -27,7 +27,9 @@
                     <h2 class="title">Register</h2>
                 </div>
                 <div class="card-body">
-                    <form action="{{url_for('/Dashboard.html')}}" method="POST">
+
+                    <a href="?page=dashboard">Test</a>
+                    <form action="/dashboard/" method="POST">
                         <div class="form-row">
                             <div class="name">Username</div>
                             <div class="value">
@@ -80,7 +82,7 @@
     </div>
 
     <!-- Jquery JS-->
-    <script src="static/colorlib/vendor/jquery/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='') }}colorlib/vendor/jquery/jquery.min.js"></script>
 
 
     <!-- Main JS-->

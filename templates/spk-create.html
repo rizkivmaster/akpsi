@@ -1,0 +1,97 @@
+{% extends 'dashboard.html' %}
+{% block content %}
+<div class="page-content">
+                    <div id="tab-general">
+                        <div class="row mbl">
+                            <div class="col-lg-10">
+                                <div class="row">
+                                    <div class="panel panel-blue">
+                                        <div class="panel-heading">Formulir SPK</div>
+                                        <div class="panel-body pan">
+                                            <form action="#">
+                                            <div class="form-body pal">
+                                                <div class="form-group">
+                                                    <div>
+                                                        <label for="noPRK">Nomor PRK :</label>
+                                                        <input id="noPRK" type="text" class="form-control" /> <button>Cari</button>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="unit">Unit Pelaksana :</label>
+                                                    <input id="unit" type="text" class="form-control" disabled />
+                                                </div>
+                                                <div class="form-group">
+                                                    <div>
+                                                        <label for="noPO">Nomor PO :</label>
+                                                        <input id="noPO" type="text" class="form-control" /> <button>Cari</button>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div>
+                                                        <label for="namaVendor">Nama Vendor :</label>
+                                                        <input id="namaVendor" type="text" class="form-control" disabled />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div>
+                                                        <label for="noKontrak">Nomor Kontrak :</label>
+                                                        <input id="noKontrak" type="text" class="form-control" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="descKontrak">Deskripsi Kontrak :</label>
+                                                    <textarea class="form-control" rows="5" id="descKontrak"></textarea>
+                                                </div>
+                                                <div class="modal-body row">
+                                                    <div class="col-md-6">
+                                                        <label for="tglAwal">Tanggal Awal :</label>
+                                                    <input id="tglAwal" type="date" class="form-control" />
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="tglAkhir">Tanggal Akhir :</label>
+                                                    <input id="tglAkhir" type="date" class="form-control" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="dokumenKontrak">Pilih Kontrak :</label>
+                                                    <input type="file" name="dokumenKontrak">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="mataUangSPK">Mata Uang :</label>
+                                                    <select id="mataUangSPK" class="form-control">
+                                                        <option value="IDR" selected>Rupiah Indonesia</option>
+                                                        <option value="USD">US Dollar</option>
+                                                        <option value="EUR">Euro</option>
+                                                        <option value="SAR">Saudi Riyal</option>
+                                                        <option value="JPY">Yen</option>
+                                                        <option value="CNY">Yuan</option>
+                                                        <option value="KRW">Won</option>
+                                                        <option value="HKD">Hong Kong Dollar</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="totalBayar">Nominal :</label>
+                                                    <input id="totalBayar" type="number" class="form-control" min="0" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="rencanaBayar">Rencana Bayar :</label>
+                                                    <select id="rencanaBayar" class="form-control">
+                                                        <option value="sekaliBayar" selected>Full Payment</option>
+                                                        <option value="cicilDuaKali">Cicilan Dua Kali</option>
+                                                        <option value="cicilTigaKali">Cicilan Tiga Kali</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-actions text-right pal">
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                            </div>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+{% endblock %}

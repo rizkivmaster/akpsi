@@ -1,0 +1,112 @@
+{% extends 'dashboard.html' %}
+{% block content %}
+<div class="page-content">
+                    <div id="tab-general">
+                        <div class="row mbl">
+                            <div class="col-lg-10">
+                                <div class="row">
+                                    <div class="panel panel-blue">
+                                        <div class="panel-heading">Formulir PRK</div>
+                                        <div class="panel-body pan">
+                                            <form action="#">
+                                                <div class="form-body pal">
+                                                    <div class="form-group">
+                                                        <label for="unit">Unit Pelaksana :</label>
+                                                        <input id="unit" type="text" class="form-control" placeholder="Jakarta Selatan 2"
+                                                            disabled />
+                                                        <!--sesuai user login-->
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div>
+                                                            <label for="tahun">Tahun :</label>
+                                                            <input id="tahun" type="text" class="form-control"
+                                                                placeholder="2018" disabled />
+                                                            <!--default-->
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div>
+                                                            <label for="noPRK">Nomor PRK :</label>
+                                                            <input id="noPRK" type="text" class="form-control"
+                                                                placeholder="000123" disabled />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div>
+                                                            <label for="deskripsiPRK">Deskripsi :</label>
+                                                            <input id="deskripsiPRK" type="text" class="form-control"
+                                                                disabled />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div>
+                                                            <label for="mtuPRK">Mata Uang :</label>
+                                                            <div class="form-group">
+                                                                <div>
+                                                                    <label for="mtuPRK">Mata Uang :</label>
+                                                                    <select id="mtuPRK" class="form-control" disabled>
+                                                                        <option>Mata Uang</option>
+                                                                        <option value="IDR" selected>Rupiah Indonesia</option>
+                                                                        <option value="USD">US Dollar</option>
+                                                                        <option value="EUR">Euro</option>
+                                                                        <option value="SAR">Saudi Riyal</option>
+                                                                        <option value="JPY">Yen</option>
+                                                                        <option value="CNY">Yuan</option>
+                                                                        <option value="KRW">Won</option>
+                                                                        <option value="HKD">Hong Kong Dollar</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div>
+                                                            <label for="nominalPRK">Nominal :</label>
+                                                            <input id="nominalPRK" type="number" class="form-control"
+                                                                disabled />
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-body row">
+                                                        <div class="col-md-6">
+                                                            <label for="tglAwal">Tanggal Awal :</label>
+                                                            <input id="tglAwal" type="date" class="form-control"
+                                                                disabled />
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="tglAkhir">Tanggal Akhir :</label>
+                                                            <input id="tglAkhir" type="date" class="form-control"
+                                                                disabled />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="dokumenTOR">Dokumen TOR :</label>
+                                                        <div>
+                                                            <a href=""><button class="btn btn-primary">Download</button></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="status">Status :</label>
+                                                        <select class="form-control" disabled>
+                                                            <option>Status</option>
+                                                            <option value="0">Draft</option>
+                                                            <option value="1" selected>Ongoing Review</option>
+                                                            <option value="2">Ongoing Revision</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-actions text-right pal">
+                                                    <button type="submit" class="btn btn-danger">Tolak</button>
+                                                    <button type="submit" class="btn btn-warning">Revisi</button>
+                                                    <button type="submit" class="btn btn-primary">OK</button>
+                                                </div>
+
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+{% endblock %}

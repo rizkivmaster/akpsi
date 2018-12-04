@@ -1,0 +1,82 @@
+{% extends 'dashboard.html' %}
+{% block content %}
+                <div class="page-content">
+                    <div id="tab-general">
+                        <div class="row mbl">
+                            <div class="col-lg-10">
+                                <div class="row">
+                                    <div class="panel panel-blue">
+                                        <div class="panel-heading">Daftar PRK</div>
+                                        <div class="panel-body">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>No. PRK</th>
+                                                        <th>Deskripsi</th>
+                                                        <th>Status</th>
+                                                        <th>Update Terakhir</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>000123</td>
+                                                        <td>Peremajaan PLTU</td>
+                                                        <td><span class="label label-sm label-success">Done</span></td>
+                                                        <td>4 Juli 2018</td>
+                                                        <td>
+                                                            <a href="url_for('prk-detail')">Detail</a></li>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>000132</td>
+                                                        <td>Pengadaan Kabel</td>
+                                                        <td><span class="label label-sm label-info">Ongoing Invoice</span></td>
+                                                        <td>21 Agustus 2018</td>
+                                                        <td>
+                                                            <a href="url_for('prk-detail')">Detail</a></li>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>000133</td>
+                                                        <td>Perbaikan Pagar</td>
+                                                        <td><span class="label label-sm label-warning">Revisi</span></td>
+                                                        <td>16 November 2018</td>
+                                                        <td>
+                                                            <a href="url_for('prk-detail')">Edit</a></li>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>000137</td>
+                                                        <td>Silaturahmi Q4 Vendor</td>
+                                                        <td><span class="label label-sm label-danger">Dropped</span></td>
+                                                        <td>28 November 2018</td>
+                                                        <td>
+                                                            <a href="PRK-detail.html">Detail</a></li>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="panel-body pan"></div>
+                                        <form action="PRK-add.html">
+                                            <div class="form-body pal">
+                                                <div class="form-actions text-right pal">
+                                                    <button class="btn btn-primary" type="submit">Tambah</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+{% endblock %}

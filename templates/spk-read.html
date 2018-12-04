@@ -1,0 +1,90 @@
+{% extends 'dashboard.html' %}
+{% block content %}
+<div class="page-content">
+                    <div id="tab-general">
+                        <div class="row mbl">
+                            <div class="col-lg-10">
+                                <div class="row">
+                                    <div class="panel panel-blue">
+                                        <div class="panel-heading">Formulir SPK</div>
+                                        <div class="panel-body pan">
+                                            <form action="#">
+                                            <div class="form-body pal">
+                                                <div class="form-group">
+                                                    <div>
+                                                        <label for="noPRK">Nomor PRK :</label>
+                                                        <input id="noPRK" type="text" class="form-control" placeholder="000124" disabled />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="unit">Unit Pelaksana :</label>
+                                                    <input id="unit" type="text" class="form-control" placeholder="Subang" disabled />
+                                                </div>
+                                                <div class="form-group">
+                                                    <div>
+                                                        <label for="noPO">Nomor PO :</label>
+                                                        <input id="noPO" type="text" class="form-control" placeholder="890761" disabled="" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div>
+                                                        <label for="namaVendor">Nama Vendor :</label>
+                                                        <input id="namaVendor" type="text" class="form-control" placeholder="PT Tetap di Hati" disabled />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div>
+                                                        <label for="noKontrak">Nomor Kontrak :</label>
+                                                        <input id="noKontrak" type="text" class="form-control" placeholder="10112011" disabled />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="descKontrak">Deskripsi Kontrak :</label>
+                                                    <textarea class="form-control" rows="5" id="descKontrak" disabled>Lorem ipsum blablablablabla</textarea>
+                                                </div>
+                                                <div class="modal-body row">
+                                                    <div class="col-md-6">
+                                                        <label for="tglAwal">Tanggal Awal :</label>
+                                                    <input id="tglAwal" type="date" class="form-control" placeholder="19/11/2018" disabled />
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="tglAkhir">Tanggal Akhir :</label>
+                                                    <input id="tglAkhir" type="date" class="form-control" placeholder="19/11/2020" disabled />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="dokumenKontrak">Dokumen Kontrak :</label>
+                                                    <div>
+                                                        <a href=""><button class="btn btn-primary">Download</button></a>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="mataUangSPK">Mata Uang :</label>
+                                                    <select id="mataUangSPK" class="form-control" disabled>
+                                                        <option value="IDR" selected>Rupiah Indonesia</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="totalBayar">Nominal :</label>
+                                                    <input id="totalBayar" type="number" class="form-control" min="0" placeholder="154.000.000" disabled />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="rencanaBayar">Rencana Bayar :</label>
+                                                    <select id="rencanaBayar" class="form-control" disabled>
+                                                        <option value="sekaliBayar" selected>Full Payment</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-actions text-right pal">
+                                                <button type="submit" class="btn btn-primary">Kembali</button>
+                                            </div>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+{% endblock %}
